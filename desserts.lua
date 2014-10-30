@@ -173,6 +173,18 @@ minetest.register_craft({
 	}
 })
 
+core.register_craft({
+	output = 'mtfoods:boston_cream',
+	recipe = {
+		{ '', 'mtfoods:chocolate', '' },
+		{ '', 'mtfoods:cream', '' },
+		{ '', 'mtfoods:cake', '' },
+	},
+	replacements = {
+		{ 'mtfoods:cream', 'vessels:drinking_glass' }
+	}
+})
+
 minetest.register_craft({
 	output = "mtfoods:carrot_cake",
 	recipe = {
@@ -210,6 +222,9 @@ minetest.register_craft({
 	recipe = {
 		{ing.banana, 'mtfoods:cream', ing.banana},
 		{'', 'mtfoods:pie_crust', ''},
+	},
+	replacements = {
+		{ 'mtfoods:cream', 'vessels:drinking_glass' }
 	}
 })
 
@@ -218,6 +233,9 @@ minetest.register_craft({
 	recipe = {
 		{'mtfoods:cream', ing.pumpkin, 'mtfoods:cream'},
 		{'', 'mtfoods:pie_crust', ''},
+	},
+	replacements = {
+		{ 'mtfoods:cream', 'vessels:drinking_glass' }
 	}
 })
 
@@ -228,6 +246,9 @@ minetest.register_craft({
 		{'', 'mtfoods:chocolate', ''},
 		{'mtfoods:chocolate', 'mtfoods:cream', 'mtfoods:chocolate'},
 		{'', 'mtfoods:chocolate', ''},
+	},
+	replacements = {
+		{ 'mtfoods:cream', 'vessels:drinking_glass' }
 	}
 })
 
